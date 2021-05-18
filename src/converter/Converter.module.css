@@ -1,0 +1,8 @@
+.verdict {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+.verdictRed {
+    color: red;
+}
