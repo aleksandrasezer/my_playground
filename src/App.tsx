@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import {Converter, Right} from "./converter/Converter";
+import {Converter} from "./converter/Converter";
+import {Game} from "./game/Game";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <Converter />
         </div>
         <div className='right'>
-          <Right />
+          <Game />
         </div>
       </div>
   );

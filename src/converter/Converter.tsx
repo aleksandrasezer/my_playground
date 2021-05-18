@@ -31,7 +31,3 @@ export const Converter = () => {
     </div>
 }
 
-
-export const Right = () => {
-    return <h2>Hello</h2>
-}

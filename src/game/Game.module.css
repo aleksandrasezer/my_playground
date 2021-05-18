@@ -1,0 +1,37 @@
+.gameBody {
+    text-align: center;
+}
+.button {
+    color: lightyellow;
+    background-color: lightyellow;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 3px solid darkgreen;
+    border-right: 3px solid darkgreen;
+    border-top: 3px solid limegreen;
+    border-left: 3px solid limegreen;
+    border-radius: 10px;
+
+}
+.button:active {
+    border-top: 3px solid darkgreen;
+    border-left: 3px solid darkgreen;
+    border-bottom: 3px solid limegreen;
+    border-right: 3px solid limegreen;
+}
+.showNumber {
+    color: goldenrod;
+}
+.gameBody input {
+    width: 70px;
+    height: 20px;
+    border: 4px solid forestgreen;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.gameBody input:focus {
+    outline: none
+}
