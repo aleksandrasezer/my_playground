@@ -1,21 +1,44 @@
-import React from "react";
-import {store} from "./redux-store";
-import {MultAC, SubAC, SumAC} from "./redux-counter-reducers";
+import React, {useState} from "react";
+import {AppDispatch, RootState, store} from "./redux-store";
+import {MultAC, IncAC, DecAC} from "./redux-counter-reducers";
+import s from './ReduxCounter.module.css'
+import {connect, useDispatch, useSelector} from "react-redux";
 
-export const ReduxCounter = () => {
+type PropsType = {
+    count: number
+    incrementF: () => void
+    decrementF: () => void
+    multX2: () => void
+};
 
-    let number = JSON.stringify(store.getState().countPage.count)
+const ReduxCounter = (props: PropsType) => {
 
-    return <div>
+    return <div className={s.counterBody}>
         <h3>Redux-counter</h3>
         <div>
-            <div>{number}</div>
+            <div>{props.count}</div>
 
             <div>
-                <button onClick={() => store.dispatch(SumAC())}> +1 </button>
-                <button onClick={() => store.dispatch(SubAC())}> -1 </button>
-                <button onClick={() => store.dispatch(MultAC())}> *2 </button>
+                <button onClick={() => props.incrementF()}> +1 </button>
+                <button onClick={() => props.decrementF()}> -1 </button>
+                <button onClick={() => props.multX2()}> *2 </button>
             </div>
         </div>
     </div>
+};
+
+
+
+let mapStateToProps = (state: RootState) => {
+    return {count: state.counter.count}
 }
+
+let mapDispatchToProps = (dispatch: AppDispatch) => {
+    return {
+        incrementF: () => dispatch(IncAC()),
+        decrementF: () => dispatch(DecAC()),
+        multX2: () => dispatch(MultAC())
+    }
+}
+
+export let ReduxCounterCont = connect(mapStateToProps,mapDispatchToProps)(ReduxCounter)

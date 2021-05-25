@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState} from "react";
 import s from "./Converter.module.css"
+
 export const Converter = () => {
 
     const [celValue, setCelValue] = useState(0)
@@ -19,7 +20,7 @@ export const Converter = () => {
 
     const verdictClassName = celValue < 100 ? s.verdict : `${s.verdict} ${s.verdictRed}`
 
-    return <div>
+    return <div className={s.converterBody}>
         ____Celsius: <input value={celValue}
                         type='number'
                         onChange={onChangeCelHandler}/>

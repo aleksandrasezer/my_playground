@@ -1,6 +1,7 @@
 body {
     margin: 15px;
 }
+
 .field {
     width: 100%;
     height: 100%;
@@ -8,14 +9,14 @@ body {
 
 .left {
     float: left;
-    width: 30%;
+    width: 45%;
     height: 100%;
     background-color: cornflowerblue;
 }
 
 .right {
     float: left;
-    width: 70%;
+    width: 55%;
     height: 100%;
     background-color: lightpink;
 }

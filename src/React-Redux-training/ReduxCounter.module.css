@@ -1,0 +1,20 @@
+.counterBody {
+    text-align: center;
+}
+.counterBody button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hotpink;
+    color: white;
+    margin: 10px;
+    border-bottom: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
+    border-left: 3px solid mediumpurple;
+    border-top: 3px solid mediumpurple;
+}
+.counterBody button:active {
+    border-left: 3px solid rebeccapurple;
+    border-top: 3px solid rebeccapurple;
+    border-right: 3px solid mediumpurple;
+    border-bottom: 3px solid mediumpurple;
+}

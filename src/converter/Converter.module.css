@@ -1,3 +1,7 @@
+.converterBody {
+    text-align: center;
+}
+
 .verdict {
     color: green;
     font-weight: bold;
