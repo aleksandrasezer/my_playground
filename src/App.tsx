@@ -3,6 +3,7 @@ import './App.css';
 import {Converter} from "./converter/Converter";
 import {Game} from "./game/Game";
 import {ReduxCounterCont} from "./React-Redux-training/Redux_Counter";
+import {Dogs} from "./dogs/dogs";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Converter/>
                 <br/>
                 <ReduxCounterCont />
+                <Dogs />
             </div>
             <div className='right'>
                 <Game/>

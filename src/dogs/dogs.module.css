@@ -1,0 +1,8 @@
+.dogPicture1 {
+    height: 220px;
+}
+.houndContainer {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

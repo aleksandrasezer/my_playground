@@ -1,8 +1,8 @@
-import React, {useState} from "react";
-import {AppDispatch, RootState, store} from "./redux-store";
+import React from "react";
+import {AppDispatch, RootState} from "./redux-store";
 import {MultAC, IncAC, DecAC} from "./redux-counter-reducers";
 import s from './ReduxCounter.module.css'
-import {connect, useDispatch, useSelector} from "react-redux";
+import {connect} from "react-redux";
 
 type PropsType = {
     count: number
