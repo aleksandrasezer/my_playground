@@ -4,6 +4,7 @@ import {Converter} from "./converter/Converter";
 import {Game} from "./game/Game";
 import {ReduxCounterCont} from "./React-Redux-training/Redux_Counter";
 import {Dogs} from "./dogs/dogs";
+import HocPractice from "./HOC-practice/HocPractice";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             </div>
             <div className='right'>
                 <Game/>
+                <HocPractice />
             </div>
         </div>
     );
